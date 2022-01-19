@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         binding.play.setOnClickListener {
             val playClient = PlayClient(Surface(binding.PlaybackView.surfaceTexture))
             this.lifecycleScope.launch(Dispatchers.IO) {
-                playClient.startPlay(this@MainActivity,"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")
+                playClient.startPlay(this@MainActivity,"https://player.vimeo.com/external/436041442.sd.mp4?s=59304a9335c0c01843c30208f43ae78b7e3a2355&profile_id=164")
             }
 
         }
